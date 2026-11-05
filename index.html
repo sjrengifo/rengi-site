@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RENGI S.A.S.</title>
+  <meta name="description" content="RENGI S.A.S. es un estudio de software independiente en Cali, Colombia.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <style>
+    @font-face { font-family: "Unbounded"; src: url("fonts/Unbounded-Variable.ttf") format("truetype"); font-weight: 200 900; font-display: swap; }
+    @font-face { font-family: "Manrope"; src: url("fonts/Manrope-Variable.ttf") format("truetype"); font-weight: 200 800; font-display: swap; }
+
+    :root {
+      --bg: #f7f5f0;
+      --surface: #ffffff;
+      --line: #e6e2d9;
+      --ink: #141414;
+      --ink-2: #6b6b6b;
+      --gutter: 24px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0e0e0e; --surface: #1e1e1e; --line: #2a2a2a; --ink: #f7f5f0; --ink-2: #a8a59e; }
+    }
+
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/1.6 "Manrope", system-ui, sans-serif; }
+    a { color: inherit; text-underline-offset: 3px; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 0 var(--gutter); }
+
+    header { display: flex; align-items: center; justify-content: space-between; padding: 20px 0; }
+    .brand { font: 800 18px/1 "Unbounded", sans-serif; letter-spacing: 0.04em; text-decoration: none; }
+    header a.lang { font-weight: 600; font-size: 15px; text-decoration: none; }
+
+    h1, h2 { font-family: "Unbounded", sans-serif; letter-spacing: -0.02em; line-height: 1.15; }
+    h1 { font-size: clamp(34px, 8vw, 52px); font-weight: 800; margin: 40px 0 16px; }
+    h2 { font-size: 22px; font-weight: 700; margin: 48px 0 12px; }
+    .lead { font-size: 20px; color: var(--ink-2); margin: 0 0 8px; }
+    .muted { color: var(--ink-2); }
+
+    .card {
+      display: flex; gap: 16px; align-items: center;
+      background: var(--surface); border: 1px solid var(--line); border-radius: 20px;
+      padding: 16px 20px; text-decoration: none;
+    }
+    .card img { width: 64px; height: 64px; border-radius: 14px; flex: none; }
+    .card b { font-family: "Unbounded", sans-serif; font-size: 18px; }
+    .card span { display: block; color: var(--ink-2); font-size: 15px; }
+    .card:hover { border-color: var(--ink-2); }
+
+    hr { border: 0; border-top: 1px solid var(--line); margin: 64px 0 0; }
+    footer { border-top: 1px solid var(--line); margin-top: 64px; padding: 24px 0 40px; font-size: 14px; color: var(--ink-2); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="./">RENGI</a>
+      <a class="lang" href="#en" lang="en">English</a>
+    </header>
+
+    <main>
+      <!-- ===== Español ===== -->
+      <h1>Software hecho con curiosidad.</h1>
+      <p class="lead">RENGI S.A.S. es un estudio de software independiente en Cali, Colombia.</p>
+
+      <h2>Quiénes somos</h2>
+      <p>RENGI fue fundada por Samuel Rengifo, estudiante de Ingeniería de Software y Telemática en la Universidad Icesi, en Cali. Creamos apps pequeñas y bien hechas, del diseño al código.</p>
+
+      <h2>Apps</h2>
+      <a class="card" href="https://sjrengifo.github.io/beatit-site/">
+        <img src="beat-it-icon.png" alt="">
+        <div><b>Beat It</b><span>Juego de fiesta para adivinar canciones con amigos, en un solo celular. Próximamente en iOS y Android.</span></div>
+      </a>
+
+      <h2>Contacto</h2>
+      <p><a href="mailto:contacto@rengisas.com">contacto@rengisas.com</a><br><span class="muted">Cali, Valle del Cauca, Colombia</span></p>
+
+      <hr>
+
+      <!-- ===== English ===== -->
+      <div lang="en" id="en">
+        <h1>Software made with curiosity.</h1>
+        <p class="lead">RENGI S.A.S. is an independent software studio in Cali, Colombia.</p>
+
+        <h2>About</h2>
+        <p>RENGI was founded by Samuel Rengifo, a Software and Telematics Engineering student at Universidad Icesi in Cali. We build small, well-made apps, from design to code.</p>
+
+        <h2>Apps</h2>
+        <a class="card" href="https://sjrengifo.github.io/beatit-site/#en">
+          <img src="beat-it-icon.png" alt="">
+          <div><b>Beat It</b><span>A party game for guessing songs with friends, on one phone. Coming soon to iOS and Android.</span></div>
+        </a>
+
+        <h2>Contact</h2>
+        <p><a href="mailto:contacto@rengisas.com">contacto@rengisas.com</a><br><span class="muted">Cali, Valle del Cauca, Colombia</span></p>
+      </div>
+    </main>
+
+    <footer>© 2026 RENGI S.A.S. · Cali, Colombia</footer>
+  </div>
+</body>
+</html>
